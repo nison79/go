@@ -14,6 +14,7 @@ interface Responses {
 export class TextGeneratorService {
 
   private responses$: Observable<Responses>;
+  
 
   constructor(private http: HttpClient) {
     this.responses$ = this.http.get<Responses>('assets/responses.json');
