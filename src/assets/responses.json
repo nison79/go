@@ -1,0 +1,22 @@
+{
+  "genders": {
+    "Boy": "You chose a boy. ",
+    "Girl": "You chose a girl. "
+  },
+  "relationships": {
+    "Love": "Your relationship is love. ",
+    "Friend": "Your relationship is friendship. ",
+    "Hate": "Your relationship is hate. ",
+    "Play": "Your relationship is play. "
+  },
+  "numbers": {
+    "1": "You chose number 1, it means...",
+    "2": "You chose number 2, it means...",
+    "3": "You chose number 3, it means...",
+    "4": "You chose number 4, it means...",
+    "5": "You chose number 5, it means...",
+    "6": "You chose number 6, it means...",
+    "7": "You chose number 7, it means...",
+    "8": "You chose number 8, it means..."
+  }
+}

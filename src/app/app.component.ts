@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { StepperComponent } from './stepper/stepper.component';
+
+
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
+  selector: 'app-root', // Correct import in imports array
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  imports: [StepperComponent],
+  standalone: true
 })
 export class AppComponent {
   title = 'go';

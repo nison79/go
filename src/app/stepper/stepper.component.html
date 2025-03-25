@@ -1,0 +1,28 @@
+<div class="stepper">
+    <div *ngIf="currentStep === 1">
+      <h1>Step 1: Press Go</h1>
+      <button (click)="nextStep()">Go</button>
+    </div>
+  
+    <div *ngIf="currentStep === 2">
+      <h1>Step 2: Choose Gender</h1>
+      <button (click)="chooseGender('Boy')">Boy</button>
+      <button (click)="chooseGender('Girl')">Girl</button>
+      <button (click)="previousStep()">Back</button>
+    </div>
+  
+    <div *ngIf="currentStep === 3">
+      <h1>Step 3: Choose Relationship</h1>
+      <button (click)="chooseRelationship('Love')">Love</button>
+      <button (click)="chooseRelationship('Friend')">Friend</button>
+      <button (click)="chooseRelationship('Hate')">Hate</button>
+      <button (click)="chooseRelationship('Play')">Play</button>
+      <button (click)="previousStep()">Back</button>
+    </div>
+  
+    <div *ngIf="currentStep === 4">
+      <h1>Step 4: Choose a Number (1-8)</h1>
+      <button *ngFor="let number of getNumbers()" (click)="chooseNumber(number)">{{ number }}</button>
+      <button (click)="previousStep()">Back</button>
+    </div>
+  </div>
